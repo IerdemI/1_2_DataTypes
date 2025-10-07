@@ -17,6 +17,9 @@ int main() {
 // Hint: make sure to initialise a and b to some values that add up to 10
 // Let the print statement below print the value of total
 
+   int a = 6;
+   int b = 4;
+   total = a + b;
 
 
    printf("%d\n", total);
@@ -25,7 +28,9 @@ int main() {
    // Step 2: Calculate the circumference and area of a circle of radius 1.5. 
    // Hint: create a new float for the radius, then update the values
    // You can use r*r instead of pow(r,2) for now
-
+   float r = 1.5;
+   circumference = PI*r*2;
+   area = r*r*PI;
 
    printf("%f\n", circumference);
    printf("%f\n", area);
@@ -37,15 +42,17 @@ int main() {
    // Hint: update the unit variable to be 'm' and add %c in the printf statement
    // dont forget to add the other argument to the printf statement too!
 
-   char unit = 'f';
+   char unit = 'm';
 
-   printf("%f\n",area);
+   printf("%f%c\n",area, unit);
 
 
    // Step 4: add a printf statement to print the line "Leeds! Leeds! Leeds!"
    // Hint: use %s to print a string and dont forget the \n for a new line
 
-   
+   char chant[] = "Leeds! Leeds! Leeds!";
+   printf("%s\n",chant);
 
+   
    return 0;
 }
